@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:inputType="number"
+        android:hint="NIM"/>
+
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nim"
+        android:layout_alignStart="@id/nim"
+        android:layout_alignLeft="@id/nim"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:hint="NAMA"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/nilai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama"
+        android:layout_alignStart="@+id/nama"
+        android:layout_alignLeft="@id/nama"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:hint="NILAI"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nilai"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"/>
+</RelativeLayout>
